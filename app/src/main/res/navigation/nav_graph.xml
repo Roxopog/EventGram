@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/userFragment">
+
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="com.burak.eventgram.view.UserFragment"
+        android:label="fragment_user"
+        tools:layout="@layout/fragment_user">
+        <action
+            android:id="@+id/action_userFragment_to_qrFragment"
+            app:destination="@id/qrFragment" />
+        <action
+            android:id="@+id/action_userFragment_to_feedFragment"
+            app:destination="@id/feedFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/qrFragment"
+        android:name="com.burak.eventgram.view.qrFragment"
+        android:label="fragment_qr"
+        tools:layout="@layout/fragment_qr">
+        <action
+            android:id="@+id/action_qrFragment_to_qryap"
+            app:destination="@id/qryap" />
+        <action
+            android:id="@+id/action_qrFragment_to_feedFragment"
+            app:destination="@id/feedFragment">
+            <argument
+                android:name="eventId"
+                app:argType="string" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/qryap"
+        android:name="com.burak.eventgram.view.qryap"
+        android:label="fragment_qryap"
+        tools:layout="@layout/fragment_qryap">
+        <action
+            android:id="@+id/action_qryap_to_feedFragment"
+            app:destination="@id/feedFragment">
+            <argument
+                android:name="eventId"
+                app:argType="string" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/feedFragment"
+        android:name="com.burak.eventgram.view.FeedFragment"
+        android:label="fragment_feed"
+        tools:layout="@layout/fragment_feed">
+        <argument
+            android:name="eventId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_feedFragment_to_uploadFragment"
+            app:destination="@id/uploadFragment" />
+        <action
+            android:id="@+id/action_feedFragment_to_userFragment"
+            app:destination="@id/userFragment" />
+        <action
+            android:id="@+id/action_feedFragment_to_qrFragment"
+            app:destination="@id/qrFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/uploadFragment"
+        android:name="com.burak.eventgram.view.UploadFragment"
+        android:label="fragment_upload"
+        tools:layout="@layout/fragment_upload">
+        <argument
+            android:name="eventId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_uploadFragment_to_feedFragment"
+            app:destination="@id/feedFragment" />
+    </fragment>
+
+</navigation>
