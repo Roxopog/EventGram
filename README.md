@@ -17,13 +17,13 @@ EventGram is an Android application built with Kotlin and Firebase that allows u
 
 ### Installation
 To run this project locally, follow these steps:
-
 Clone the repository:
 
-bash
-copy this code
-git clone https://github.com/yourusername/eventgram.git
-cd eventgram
+- go to bash
+- copy this code : 
+- git clone https://github.com/Roxopog/eventgram.git
+- cd eventgram
+  
 Open the project in Android Studio:
 
 Launch Android Studio and select "Open an existing project".
