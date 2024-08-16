@@ -9,11 +9,11 @@ EventGram is an Android application built with Kotlin and Firebase that allows u
 - Event Management: Users can create new events with unique IDs, which are stored in Firebase and used to generate QR codes.
 - Persistent Feed: The app remembers the last feed the user was viewing, allowing them to continue from where they left off when reopening the app.
 ### Screenshots
-<img src="https://github.com/user-attachments/assets/863baace-d688-45d6-bccd-2a825ea45a85" width="100" height="100">
-<img src="https://github.com/user-attachments/assets/be2ead21-4408-47a6-b998-910e3d220cac" width="100" height="100">
-<img src="https://github.com/user-attachments/assets/a9fd0316-1914-47d2-87f7-011709c71d0f" width="100" height="100">
-<img src="https://github.com/user-attachments/assets/791c8838-b6a1-4808-889a-b20ed9bbb5ef" width="100" height="100">
-<img src="https://github.com/user-attachments/assets/2a3988e5-f363-4467-9f10-d50b559786ec" width="100" height="100">
+<img src="https://github.com/user-attachments/assets/863baace-d688-45d6-bccd-2a825ea45a85" width="134" height="292">
+<img src="https://github.com/user-attachments/assets/be2ead21-4408-47a6-b998-910e3d220cac" width="134" height="292">
+<img src="https://github.com/user-attachments/assets/a9fd0316-1914-47d2-87f7-011709c71d0f" width="134" height="292">
+<img src="https://github.com/user-attachments/assets/791c8838-b6a1-4808-889a-b20ed9bbb5ef" width="134" height="292">
+<img src="https://github.com/user-attachments/assets/2a3988e5-f363-4467-9f10-d50b559786ec" width="134" height="292">
 
 ### Installation
 To run this project locally, follow these steps:
